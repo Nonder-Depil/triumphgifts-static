@@ -1,0 +1,23 @@
+/**
+ * Custom Medals 专属页面微调
+ * 需求：奖牌实物与展台在左侧，将 Hero 文案整体移到右侧留白区域
+ */
+
+/* 桌面端：渐变背景翻转（左侧透明露出奖牌，右侧加深增强文字对比） */
+.tg-cat-landing-custom-medals .tg-hero--banner {
+    background-image: linear-gradient(270deg, rgba(62, 28, 22, .75) 0%, rgba(62, 28, 22, .55) 38%, rgba(62, 28, 22, .18) 58%, rgba(62, 28, 22, 0) 75%), var(--tg-hero-image);
+    background-position: center, left center;
+}
+
+/* 桌面端：Hero 内容区靠右排布 */
+@media (min-width: 901px) {
+    .tg-cat-landing-custom-medals .tg-hero__grid {
+        justify-content: flex-end;
+    }
+
+    .tg-cat-landing-custom-medals .tg-hero__content {
+        margin-left: auto;
+        margin-right: 0;
+        text-align: left;
+    }
+}

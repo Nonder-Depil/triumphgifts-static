@@ -1,0 +1,1024 @@
+/* ==========================================================================
+   Triumph Gifts - Vietnam Factory Architectural Industrial Stylesheet
+   Craft Philosophy: Anti-AI-Slop, Swiss Grid, Editorial Authority, Zero Generic Cards
+   Palette: Deep Precision Charcoal/Navy (#0a1420), Brass/Gold (#c48f32), 
+            Technical White (#ffffff), Architectural Hairline (#e2e6ed)
+   ========================================================================== */
+
+:root {
+    --tg-vn-charcoal: #0a1420;
+    --tg-vn-charcoal-subtle: #121f2f;
+    --tg-vn-brass: #c48f32;
+    --tg-vn-brass-hover: #dca33e;
+    --tg-vn-brass-light: #f6efe1;
+    --tg-vn-ink: #111827;
+    --tg-vn-secondary: #4b5563;
+    --tg-vn-tertiary: #6b7280;
+    --tg-vn-bg-light: #f8fafc;
+    --tg-vn-hairline: #e2e8f0;
+    --tg-vn-hairline-dark: rgba(255, 255, 255, 0.12);
+    --tg-vn-wrap: 1280px;
+    --tg-vn-font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Base resets & layout */
+html:has(.tg-vietnam-factory-page),
+body:has(.tg-vietnam-factory-page),
+body.tg-vietnam-factory-landing {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
+.tg-vietnam-factory-page {
+    color: var(--tg-vn-ink);
+    font-family: var(--tg-vn-font-display);
+    line-height: 1.65;
+    background-color: #ffffff;
+    overflow-x: clip;
+    max-width: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.tg-vietnam-factory-page * {
+    box-sizing: border-box;
+}
+
+.tg-vn-wrap {
+    width: min(calc(100% - 64px), var(--tg-vn-wrap));
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+/* Architectural Spacing */
+.tg-vn-section {
+    padding: 110px 0;
+    position: relative;
+}
+
+.tg-vn-section--charcoal {
+    background-color: var(--tg-vn-charcoal);
+    color: #ffffff;
+}
+
+.tg-vn-section--light {
+    background-color: var(--tg-vn-bg-light);
+}
+
+.tg-vn-hairline-top {
+    border-top: 1px solid var(--tg-vn-hairline);
+}
+
+.tg-vn-hairline-bottom {
+    border-bottom: 1px solid var(--tg-vn-hairline);
+}
+
+/* Headings: Typographic Authority, No Pills */
+.tg-vn-headline-group {
+    margin-bottom: 64px;
+}
+
+.tg-vn-headline-group--split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: flex-end;
+}
+
+.tg-vn-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--tg-vn-brass);
+    margin-bottom: 14px;
+    display: block;
+}
+
+.tg-vn-section--charcoal .tg-vn-label {
+    color: var(--tg-vn-brass);
+}
+
+.tg-vn-title {
+    font-size: clamp(34px, 4vw, 48px);
+    font-weight: 750;
+    line-height: 1.14;
+    letter-spacing: -0.035em;
+    color: var(--tg-vn-ink);
+    margin: 0;
+}
+
+.tg-vn-section--charcoal .tg-vn-title {
+    color: #ffffff;
+}
+
+.tg-vn-lead {
+    font-size: 17px;
+    color: var(--tg-vn-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.tg-vn-section--charcoal .tg-vn-lead {
+    color: #94a3b8;
+}
+
+/* Buttons: Solid Architectural Craft */
+.tg-vn-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 14.5px;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    border: 1px solid transparent;
+}
+
+.tg-vn-btn--brass {
+    background-color: var(--tg-vn-brass);
+    color: #ffffff;
+}
+
+.tg-vn-btn--brass:hover {
+    background-color: var(--tg-vn-brass-hover);
+    color: #ffffff;
+}
+
+.tg-vn-btn--outline-light {
+    background: transparent;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.tg-vn-btn--outline-light:hover {
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   1. HERO SECTION: Architectural Industrial Split
+   ========================================================================== */
+.tg-vn-hero {
+    background-color: var(--tg-vn-charcoal);
+    color: #ffffff;
+    padding: 80px 0 96px;
+    border-bottom: 1px solid var(--tg-vn-hairline-dark);
+}
+
+.tg-vn-hero-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 32px;
+    letter-spacing: 0.02em;
+}
+
+.tg-vn-hero-nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.tg-vn-hero-nav a:hover {
+    color: #ffffff;
+}
+
+.tg-vn-hero-nav span {
+    color: #475569;
+}
+
+.tg-vn-hero-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 64px;
+    align-items: flex-start;
+}
+
+.tg-vn-hero-title {
+    font-size: clamp(38px, 4.8vw, 62px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    margin: 0 0 24px;
+}
+
+.tg-vn-hero-sub {
+    font-size: clamp(20px, 2.2vw, 26px);
+    font-weight: 500;
+    color: #cbd5e1;
+    display: block;
+    margin-top: 8px;
+    letter-spacing: -0.02em;
+}
+
+.tg-vn-hero-intro {
+    font-size: 16.5px;
+    line-height: 1.75;
+    color: #94a3b8;
+    margin-bottom: 40px;
+    max-width: 640px;
+}
+
+/* Metric Data Strip: Precision Hairline Rows instead of puffy cards */
+.tg-vn-data-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--tg-vn-hairline-dark);
+    border-bottom: 1px solid var(--tg-vn-hairline-dark);
+    padding: 24px 0;
+    margin-bottom: 0;
+}
+
+.tg-vn-data-cell {
+    padding: 0 16px;
+    border-right: 1px solid var(--tg-vn-hairline-dark);
+}
+
+.tg-vn-data-cell:first-child {
+    padding-left: 0;
+}
+
+.tg-vn-data-cell:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.tg-vn-data-num {
+    font-size: 24px;
+    font-weight: 750;
+    color: #ffffff;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+
+.tg-vn-data-label {
+    font-size: 12px;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+}
+
+.tg-vn-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.tg-vn-video-frame {
+    position: relative;
+    border: 1px solid var(--tg-vn-hairline-dark);
+    background: #000000;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+}
+
+.tg-vn-video-inner {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.tg-vn-video-inner iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.tg-vn-video-sublink {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.tg-vn-video-sublink a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.tg-vn-video-sublink a:hover {
+    color: var(--tg-vn-brass);
+}
+
+.tg-vn-hero-actions--media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tg-vn-hero-actions--media .tg-vn-btn {
+    width: auto;
+    padding: 16px 36px;
+}
+
+/* ==========================================================================
+   2. STRATEGIC ADVANTAGES: Swiss Editorial Rows (Zero Cards)
+   ========================================================================== */
+.tg-vn-adv-editorial {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 72px;
+    align-items: flex-start;
+}
+
+.tg-vn-adv-sidebar {
+    position: sticky;
+    top: 40px;
+}
+
+.tg-vn-adv-sidebar .tg-vn-title {
+    margin-bottom: 20px;
+}
+
+.tg-vn-adv-sidebar-text {
+    font-size: 16.5px;
+    line-height: 1.7;
+    color: var(--tg-vn-secondary);
+    margin-bottom: 32px;
+}
+
+.tg-vn-adv-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.tg-vn-adv-row {
+    padding: 36px 0;
+    border-bottom: 1px solid var(--tg-vn-hairline);
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 24px;
+}
+
+.tg-vn-adv-row:first-child {
+    border-top: 1px solid var(--tg-vn-hairline);
+}
+
+.tg-vn-adv-index {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--tg-vn-brass);
+    letter-spacing: 0.05em;
+    padding-top: 4px;
+}
+
+.tg-vn-adv-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--tg-vn-ink);
+    margin: 0 0 10px;
+    letter-spacing: -0.02em;
+}
+
+.tg-vn-adv-content p {
+    font-size: 15px;
+    color: var(--tg-vn-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ==========================================================================
+   3. SPECIALIZED CUSTOM METAL PRODUCTS: Clean Editorial Catalog
+   ========================================================================== */
+.tg-vn-products-catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 32px;
+}
+
+.tg-vn-prod-entry {
+    display: flex;
+    flex-direction: column;
+}
+
+.tg-vn-prod-img-canvas {
+    position: relative;
+    padding-top: 72%;
+    background: #f1f5f9;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.tg-vn-prod-img-canvas img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.tg-vn-prod-entry:hover .tg-vn-prod-img-canvas img {
+    transform: scale(1.03);
+}
+
+.tg-vn-prod-meta {
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--tg-vn-brass);
+    margin-bottom: 6px;
+}
+
+.tg-vn-prod-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--tg-vn-ink);
+    margin: 0 0 10px;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+}
+
+.tg-vn-prod-spec {
+    font-size: 14px;
+    color: var(--tg-vn-secondary);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* ==========================================================================
+   4. 8-STEP PRECISION MANUFACTURING PROCESS: Engineering Blueprint Flow
+   ========================================================================== */
+.tg-vn-process-blueprint {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--tg-vn-hairline-dark);
+    border-left: 1px solid var(--tg-vn-hairline-dark);
+}
+
+.tg-vn-blueprint-node {
+    padding: 36px 30px;
+    border-right: 1px solid var(--tg-vn-hairline-dark);
+    border-bottom: 1px solid var(--tg-vn-hairline-dark);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: transparent;
+    transition: background-color 0.2s;
+}
+
+.tg-vn-blueprint-node:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.tg-vn-node-step {
+    font-size: 12px;
+    font-weight: 750;
+    color: var(--tg-vn-brass);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.tg-vn-node-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+}
+
+.tg-vn-node-desc {
+    font-size: 13.5px;
+    color: #94a3b8;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* ==========================================================================
+   5. WORKSHOP CAPABILITIES & GALLERY: Editorial Photo Spread
+   ========================================================================== */
+.tg-vn-gallery-spread {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 28px;
+    margin-bottom: 28px;
+}
+
+.tg-vn-gallery-lead-frame {
+    position: relative;
+    padding-top: 60%;
+    background: #0f172a;
+    overflow: hidden;
+}
+
+.tg-vn-gallery-lead-frame img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tg-vn-gallery-caption-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(10, 20, 32, 0.9) 100%);
+    padding: 24px 28px;
+    color: #ffffff;
+}
+
+.tg-vn-gallery-caption-overlay h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.tg-vn-gallery-caption-overlay p {
+    font-size: 13px;
+    color: #cbd5e1;
+    margin: 0;
+}
+
+.tg-vn-gallery-sub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tg-vn-gallery-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.tg-vn-gallery-thumb {
+    position: relative;
+    padding-top: 66%;
+    background: #0f172a;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.tg-vn-gallery-thumb img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.tg-vn-gallery-item:hover .tg-vn-gallery-thumb img {
+    transform: scale(1.04);
+}
+
+.tg-vn-gallery-item-title {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--tg-vn-ink);
+    margin: 0 0 2px;
+}
+
+.tg-vn-gallery-item-desc {
+    font-size: 12.5px;
+    color: var(--tg-vn-tertiary);
+    margin: 0;
+    line-height: 1.45;
+}
+
+/* Secondary 4-image row */
+.tg-vn-gallery-row-quad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* ==========================================================================
+   6. AUDIT & COMPLIANCE: Comprehensive Compliance Dossier
+   ========================================================================== */
+.tg-vn-audit-dossier {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--tg-vn-hairline);
+    border-bottom: 1px solid var(--tg-vn-hairline);
+    margin-bottom: 64px;
+}
+
+.tg-vn-dossier-col {
+    padding: 36px 32px;
+    border-right: 1px solid var(--tg-vn-hairline);
+}
+
+.tg-vn-dossier-col:last-child {
+    border-right: none;
+}
+
+.tg-vn-dossier-tag {
+    font-size: 11px;
+    font-weight: 750;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--tg-vn-brass);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.tg-vn-dossier-col h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--tg-vn-ink);
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+}
+
+.tg-vn-dossier-col p {
+    font-size: 14.5px;
+    color: var(--tg-vn-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.tg-vn-certs-archive {
+    padding-top: 16px;
+}
+
+.tg-vn-certs-archive-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 24px;
+}
+
+.tg-vn-certs-archive-header h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--tg-vn-ink);
+}
+
+.tg-vn-certs-archive-header span {
+    font-size: 13px;
+    color: var(--tg-vn-tertiary);
+}
+
+.tg-vn-certs-matrix {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+}
+
+.tg-vn-cert-plate {
+    background: #ffffff;
+    border: 1px solid var(--tg-vn-hairline);
+    padding: 8px;
+    cursor: default;
+    pointer-events: none;
+    user-select: none;
+}
+
+.tg-vn-cert-plate:hover {
+    border-color: var(--tg-vn-hairline);
+    box-shadow: none;
+}
+
+.tg-vn-cert-plate img {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+    background: #f8fafc;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* ==========================================================================
+   7. DUAL-FACTORY STRATEGY: Sourcing Decision Matrix
+   ========================================================================== */
+.tg-vn-matrix-table-wrap {
+    overflow-x: auto;
+    border-top: 1px solid var(--tg-vn-hairline);
+    border-bottom: 1px solid var(--tg-vn-hairline);
+    margin-bottom: 36px;
+}
+
+.tg-vn-matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tg-vn-matrix-table th,
+.tg-vn-matrix-table td {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--tg-vn-hairline);
+    font-size: 14.5px;
+    line-height: 1.6;
+}
+
+.tg-vn-matrix-table thead th {
+    background: #f8fafc;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--tg-vn-ink);
+    border-bottom: 2px solid var(--tg-vn-ink);
+}
+
+.tg-vn-matrix-table thead th:first-child {
+    width: 24%;
+}
+
+.tg-vn-matrix-table thead th:nth-child(2) {
+    width: 38%;
+}
+
+.tg-vn-matrix-table thead th:nth-child(3) {
+    width: 38%;
+    background: #f4efe6;
+    color: #785012;
+}
+
+.tg-vn-matrix-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tg-vn-matrix-table td:first-child {
+    font-weight: 700;
+    color: var(--tg-vn-ink);
+}
+
+.tg-vn-matrix-table td:nth-child(3) {
+    background: #faf7f2;
+}
+
+.tg-vn-matrix-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.tg-vn-matrix-summary-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--tg-vn-ink);
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+/* ==========================================================================
+   8. INQUIRY SECTION: Clean Technical RFP Form (Zero Card Wrappers)
+   ========================================================================== */
+.tg-vn-rfp-layout {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 72px;
+}
+
+.tg-vn-rfp-sidebar {
+    padding-right: 24px;
+}
+
+.tg-vn-rfp-sidebar .tg-vn-title {
+    margin-bottom: 18px;
+}
+
+.tg-vn-rfp-sidebar p {
+    font-size: 16px;
+    color: var(--tg-vn-secondary);
+    line-height: 1.75;
+    margin-bottom: 36px;
+}
+
+.tg-vn-rfp-contact-points {
+    border-top: 1px solid var(--tg-vn-hairline);
+    padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tg-vn-rfp-point-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--tg-vn-tertiary);
+    font-weight: 700;
+}
+
+.tg-vn-rfp-point-val {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--tg-vn-ink);
+    margin-top: 2px;
+}
+
+.tg-vn-rfp-point-val a {
+    color: var(--tg-vn-ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--tg-vn-brass);
+}
+
+.tg-vn-rfp-point-val a:hover {
+    color: var(--tg-vn-brass);
+}
+
+/* Clean Technical Form Inputs */
+.tg-vn-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tg-vn-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tg-vn-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tg-vn-form-group label {
+    font-size: 13.5px;
+    font-weight: 650;
+    color: var(--tg-vn-ink);
+}
+
+.tg-vn-form-group input,
+.tg-vn-form-group select,
+.tg-vn-form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 15px;
+    color: var(--tg-vn-ink);
+    background: #ffffff;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.tg-vn-form-group input:focus,
+.tg-vn-form-group select:focus,
+.tg-vn-form-group textarea:focus {
+    outline: none;
+    border-color: var(--tg-vn-brass);
+}
+
+.tg-vn-form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .tg-vn-hero-layout {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .tg-vn-adv-editorial {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .tg-vn-adv-sidebar {
+        position: static;
+    }
+
+    .tg-vn-products-catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tg-vn-process-blueprint {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tg-vn-gallery-spread {
+        grid-template-columns: 1fr;
+    }
+
+    .tg-vn-audit-dossier {
+        grid-template-columns: 1fr;
+    }
+
+    .tg-vn-dossier-col {
+        border-right: none;
+        border-bottom: 1px solid var(--tg-vn-hairline);
+    }
+
+    .tg-vn-certs-matrix {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .tg-vn-rfp-layout {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tg-vn-wrap {
+        width: min(calc(100% - 32px), var(--tg-vn-wrap));
+    }
+
+    .tg-vn-section {
+        padding: 64px 0;
+    }
+
+    .tg-vn-headline-group--split {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .tg-vn-hero-title,
+    .tg-vn-title {
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .tg-vn-data-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .tg-vn-data-cell {
+        border-right: none;
+        padding: 0;
+    }
+
+    .tg-vn-products-catalog {
+        grid-template-columns: 1fr;
+    }
+
+    .tg-vn-process-blueprint {
+        grid-template-columns: 1fr;
+    }
+
+    .tg-vn-gallery-row-quad {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tg-vn-matrix-table-wrap {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .tg-vn-matrix-table {
+        min-width: 600px;
+    }
+
+    .tg-vn-matrix-summary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .tg-vn-matrix-summary-text {
+        font-size: 16px;
+    }
+
+    .tg-vn-matrix-summary .tg-vn-btn {
+        width: 100%;
+    }
+
+    .tg-vn-certs-archive-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .tg-vn-certs-matrix {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tg-vn-form-row {
+        grid-template-columns: 1fr;
+    }
+
+    #icon-sidebar {
+        right: 10px !important;
+        max-width: calc(100vw - 20px) !important;
+    }
+}
